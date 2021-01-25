@@ -35,7 +35,7 @@ function setup(){
 
 
 function draw() {
-  background(back_img);
+  background(back_img,displayWidth/2 - 50,displayHeight/2 - 50);
   
    if (playerCount === 2) {
      game.update(1);
