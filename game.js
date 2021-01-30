@@ -100,13 +100,18 @@ class Game{
                  }
                  
                   if (player.index !== null) {
-                     //fill code here, to destroy the objects.
+                       for(var fruit=0;fruit<fruitGroup.length;fruit++){
+                        if (fruitGroup.get(fruit).isTouching (players)){
+                            fruitGroup.get(fruit).destroy();
+                              player.score =player.score+1;
+                              player.update();
+                        }          
+                     }                  
                   }
                 
 
          
-         
-        drawSprites
+        
          
 
     }
